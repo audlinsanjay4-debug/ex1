@@ -1,3 +1,5 @@
+name: Demo Workflow
+
 on:
   push:
     branches: ["main"]
@@ -11,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Access secret value
-        run: echo "The secret key is ${{ secrets.SANJAY4DEBUG }}"
+        run: echo "The secret key is ${{ secrets.sanjayfgh }}"
