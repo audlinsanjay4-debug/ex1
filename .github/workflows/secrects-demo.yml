@@ -1,0 +1,14 @@
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Access secret value
+        run: echo "The secret key is ${{ secrets.SANJAY4DEBUG }}"
